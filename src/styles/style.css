@@ -22,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 2000;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
@@ -176,7 +176,7 @@ body {
 
   color: #333;
 
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 2;
 }
@@ -251,7 +251,6 @@ body {
   color: #2ecc71;
 }
 
-
 .hero-content p {
   font-size: 18px;
   margin-bottom: 30px;
@@ -288,7 +287,7 @@ body {
   border-radius: 16px;
   width: 320px;
   color: #333;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
   animation: fadeIn 1.5s ease;
 }
 
@@ -329,7 +328,7 @@ body {
 
 .services h2 {
   margin-bottom: 40px;
-  color: #0A3D62;
+  color: #0a3d62;
 }
 
 .services-grid {
@@ -344,7 +343,7 @@ body {
   padding: 25px;
   border-radius: 20px;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
@@ -360,7 +359,7 @@ body {
 /* ================= SOBRE ================= */
 .about {
   padding: 80px 10%;
-  background: #0A3D62;
+  background: #0a3d62;
   color: white;
 }
 
@@ -383,69 +382,75 @@ body {
 
 /* ANIMAÇÃO */
 @keyframes fadeIn {
-  from {opacity:0; transform: translateY(30px);}
-  to   {opacity:1; transform: translateY(0);}
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ------------------ PRODUTOS ------------------ */
 .content {
-    padding: 130px 40px 40px;
+  padding: 130px 40px 40px;
 }
 
 .hero-content h1 {
-  color: white;   /* força a frase principal em branco */
+  color: white; /* força a frase principal em branco */
 }
 
 .grid {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
 
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    transition: 0.3s;
-    border-left: 6px solid #40a348;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  border-left: 6px solid #40a348;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
 .card h3 {
-    font-size: 22px;
-    margin-bottom: 8px;
-    color: #0d1a2d;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #0d1a2d;
 }
 
 .card p {
-    color: #444;
+  color: #444;
 }
 
 /* ------------------ RESPONSIVO ------------------ */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 15px;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+  .navbar {
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-    .menu a {
-        margin: 0 6px;
-    }
+  .menu a {
+    margin: 0 6px;
+  }
 
-    .hero h1 {
-        font-size: 34px;
-    }
+  .hero h1 {
+    font-size: 34px;
+  }
 
-    .hero p {
-        font-size: 16px;
-    }
+  .hero p {
+    font-size: 16px;
+  }
 }
 
 /* ------------------ Final Produtos Ok ate aqui ------------------ */
@@ -453,57 +458,56 @@ body {
 /* ------------ PÁGINA DE PEDIDOS ------------ */
 
 .pedido-box {
-    margin-top: 30px;
-    background: white;
-    padding: 35px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.18);
-    max-width: 700px;
+  margin-top: 30px;
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.18);
+  max-width: 700px;
 }
 
 .pedido-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .pedido-form label {
-    font-size: 18px;
-    font-weight: bold;
-    color: #0d1a2d;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0d1a2d;
 }
 
 .pedido-form input,
 .pedido-form select,
 .pedido-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #bbb;
-    border-radius: 8px;
-    font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
 .pedido-form textarea {
-    height: 100px;
-    resize: none;
+  height: 100px;
+  resize: none;
 }
 
 .enviar-pedido {
-    padding: 14px;
-    background: #40a348;
-    color: white;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    border: none;
-    margin-top: 10px;
-    transition: 0.3s;
+  padding: 14px;
+  background: #40a348;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  transition: 0.3s;
 }
 
 .enviar-pedido:hover {
-    background: #2c7c33;
+  background: #2c7c33;
 }
-
 
 /* ------------ FIM DA PAGINA DE PEDIDOS ------------ */
 
@@ -567,11 +571,12 @@ body {
   width: 380px;
   border-radius: 18px;
   text-align: left;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* #2ecc71 */
 .contact-info h2 {
-  color: #2ecc71;
+  color: var(--color-primary-500);
   margin-bottom: 20px;
 }
 
@@ -595,7 +600,7 @@ body {
   width: 420px;
   border-radius: 18px;
   text-align: left;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form h2 {
@@ -639,7 +644,7 @@ body {
   height: 350px;
   border-radius: 20px;
   border: 0;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 /* FOOTER */
